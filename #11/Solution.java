@@ -1,5 +1,6 @@
 class Solution {
     public int maxArea(int[] height) {
+		// 双指针法
         int i = 0;
         int j = height.length - 1;
         int max = (j - i) * (height[i] < height[j] ? height[i] : height[j]);
